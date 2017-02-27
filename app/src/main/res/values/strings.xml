@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Blabla_Wild</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_text">Rechercher</string>
+    <string name="search_depart">Départ</string>
+    <string name="search_destination">Destination</string>
+    <string name="search_date">Date</string>
+    <string name="search_button">Rechercher</string>
+
+
+
+</resources>
