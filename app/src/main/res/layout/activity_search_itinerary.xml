@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="fr.wcs.BlablaWild.SearchItineraryActivity">
+    tools:context="com.example.wilder.blabla_wild.SearchItineraryActivity">
 
     <TextView
         android:text="@string/search_depart"
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/button"
+        android:id="@+id/search_button"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/editText3" />
