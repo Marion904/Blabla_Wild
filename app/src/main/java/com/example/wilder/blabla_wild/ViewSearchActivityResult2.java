@@ -18,9 +18,9 @@ public class ViewSearchActivityResult2 extends AppCompatActivity {
         TextView textView = new TextView(this);
         textView.setTextSize(40);
         textView.setText(message);
-
-        ViewGroup layout = (ViewGroup) findViewById(R.id.activity_view_search_result2);
-        layout.addView(textView);
+        //ViewGroup layout = (ViewGroup) findViewById(R.id.activity_view_search_result2);
+        //layout.addView(textView);
+        setTitle(message);
 
     }
 }

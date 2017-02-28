@@ -15,7 +15,19 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/welcome" />
+
+    <Button
+        android:text="@string/start_button"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/button_start"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

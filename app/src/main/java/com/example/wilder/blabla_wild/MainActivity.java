@@ -16,32 +16,30 @@ import com.example.wilder.blabla_wild.R;
 
 public class MainActivity extends AppCompatActivity {
 //    final Button travel_button =(Button) findViewById(R.id.search_button);
+    Button start_button;
 
   // public final static String EXTRA_MESSAGE1 = "com.example.wilder.blabla_wild.MESSAGE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        start_button = (Button) findViewById(R.id.button_start);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-/*
-        travel_button.setOnClickListener(new OnClickListener() {
+
+        start_button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent_travel = new Intent(MainActivity.this, SearchItineraryActivity.class);
                 startActivity(intent_travel);
             }
-        });*/
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-               /*
-                Intent intent_travel = new Intent(MainActivity.this, SearchItineraryActivity.class);
-                String trajet = "";
-                intent_travel.putExtra(EXTRA_MESSAGE1, trajet);
-                startActivity(intent_travel);*/
+
 
 
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)

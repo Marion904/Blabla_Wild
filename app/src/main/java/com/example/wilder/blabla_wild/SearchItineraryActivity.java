@@ -33,14 +33,14 @@ public class SearchItineraryActivity extends AppCompatActivity {
         depart =(EditText) findViewById(R.id.editText);
         destination =(EditText) findViewById(R.id.editText2);
 //        announce = getString(R.string.announce);
-
-        //Intent intent = getIntent();
-        //String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE1);
+/*
+        Intent intent_init = getIntent();
+       // String message = intent_init.getStringExtra(MainActivity.EXTRA_MESSAGE1);
         //TextView textView = new TextView(this);
         //textView.setTextSize(40);
         //textView.setText(message);
-        //ViewGroup layout = (ViewGroup) findViewById(R.id.activity_search_itinerary);
-        //layout.addView(textView);
+        ViewGroup layout = (ViewGroup) findViewById(R.id.activity_search_itinerary);
+        layout.addView();*/
 
         search_button.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
