@@ -32,7 +32,7 @@ public class SearchItineraryActivity extends AppCompatActivity {
         search_button = (Button) findViewById(R.id.search_button);
         depart =(EditText) findViewById(R.id.editText);
         destination =(EditText) findViewById(R.id.editText2);
-        announce = getString(R.string.announce);
+//        announce = getString(R.string.announce);
 
         //Intent intent = getIntent();
         //String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE1);
@@ -50,7 +50,7 @@ public class SearchItineraryActivity extends AppCompatActivity {
                 } else {
                     Intent intent_search = new Intent(SearchItineraryActivity.this, ViewSearchActivityResult2.class);
 
-                    String trajet = announce+" "+depart.getText().toString()+" - "+ destination.getText().toString();
+                    String trajet = depart.getText().toString()+" >> "+ destination.getText().toString();
                     intent_search.putExtra(message, trajet);
                     startActivity(intent_search);
 
