@@ -15,10 +15,9 @@ import android.widget.Button;
 import com.example.wilder.blabla_wild.R;
 
 public class MainActivity extends AppCompatActivity {
-//    final Button travel_button =(Button) findViewById(R.id.search_button);
+
     Button start_button;
 
-  // public final static String EXTRA_MESSAGE1 = "com.example.wilder.blabla_wild.MESSAGE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         start_button = (Button) findViewById(R.id.button_start);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        //Insert the intent linked to the starting button
         start_button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
