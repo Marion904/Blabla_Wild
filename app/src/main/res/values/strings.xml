@@ -9,7 +9,7 @@
     <string name="search_date">Date</string>
     <string name="search_button">Rechercher</string>
     <string name="travel_button">Trouver un itinéraire</string>
-    <string name="string_fleche">" >> "</string>
+    <string name="dday">"La date de voyage souhaitée est le "</string>
     <string name="toast">Merci d\'entrer le point de départ et la destination</string>
     <string name="arrow"> >> </string>
 

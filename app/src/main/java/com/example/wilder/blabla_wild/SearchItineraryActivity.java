@@ -20,6 +20,8 @@ public class SearchItineraryActivity extends AppCompatActivity {
     Button search_button;
     EditText depart;
     EditText destination;
+    EditText date;
+    public final static String EXTRA_SEARCH = "journey";
 
 
     @Override
@@ -29,6 +31,7 @@ public class SearchItineraryActivity extends AppCompatActivity {
         search_button = (Button) findViewById(R.id.search_button);
         depart =(EditText) findViewById(R.id.editText);
         destination =(EditText) findViewById(R.id.editText2);
+        date =(EditText) findViewById(R.id.editText3);
         //Listen to the click activity on the button
         search_button.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -41,12 +44,11 @@ public class SearchItineraryActivity extends AppCompatActivity {
                     Intent intent_search = new Intent(SearchItineraryActivity.this, ViewSearchActivityResult2.class);
                     //The information we want to take from the present activity to insert on the actual visual
                     // The departure
-
                     String departure = depart.getText().toString();
-                    intent_search.putExtra("messageDepart", departure);
-                    //The destination
-                    String arrivee = destination.getText().toString();
-                    intent_search.putExtra("messageArrivee", arrivee);
+                    String destinations = destination.getText().toString();
+                    String dday =date.getText().toString();
+                    SearchRequestModel searchRequestModel = new SearchRequestModel(departure,destinations,dday);
+                    intent_search.putExtra(EXTRA_SEARCH,searchRequestModel);
                     startActivity(intent_search);
                 }
 
