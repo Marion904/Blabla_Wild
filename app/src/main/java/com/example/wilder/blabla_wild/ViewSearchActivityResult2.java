@@ -13,11 +13,9 @@ public class ViewSearchActivityResult2 extends AppCompatActivity {
         setContentView(R.layout.activity_view_search_result2);
         //We "getIntent" to recover the sent data
         Intent intent = getIntent();
-        String message = intent.getStringExtra(SearchItineraryActivity.message);
-        //We insert the data in a TextView
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText(message);
+        //Creation of the final string
+        String message = intent.getStringExtra("messageDepart")+getString(R.string.string_fleche)+intent.getStringExtra("messageArrivee");
+
         //We precise that we want the information to be displayed the title of our activity
         setTitle(message);
 
@@ -26,12 +24,6 @@ public class ViewSearchActivityResult2 extends AppCompatActivity {
 
 
 
-/**
- * Created by wilder on 27/02/17.
- * for he record : tha title need a textView, a plain string did not work (message had to be converted)
- * /*
-
- */
 
 
 

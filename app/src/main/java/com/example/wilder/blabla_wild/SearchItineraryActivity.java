@@ -20,8 +20,6 @@ public class SearchItineraryActivity extends AppCompatActivity {
     Button search_button;
     EditText depart;
     EditText destination;
-    static String message;
-
 
 
     @Override
@@ -42,8 +40,13 @@ public class SearchItineraryActivity extends AppCompatActivity {
                     //The intent to target the next activity
                     Intent intent_search = new Intent(SearchItineraryActivity.this, ViewSearchActivityResult2.class);
                     //The information we want to take from the present activity to insert on the actual visual
-                    String trajet = depart.getText().toString()+" "+getString(R.string.arrow)+" "+ destination.getText().toString();
-                    intent_search.putExtra(message, trajet);
+                    // The departure
+
+                    String departure = depart.getText().toString();
+                    intent_search.putExtra("messageDepart", departure);
+                    //The destination
+                    String arrivee = destination.getText().toString();
+                    intent_search.putExtra("messageArrivee", arrivee);
                     startActivity(intent_search);
                 }
 
