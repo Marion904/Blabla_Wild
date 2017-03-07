@@ -26,7 +26,11 @@ public class ViewSearchActivityResult2 extends AppCompatActivity {
 
         //We precise that we want the information to be displayed the title of our activity
         setTitle(result.getDepart()+getString(R.string.arrow)+result.getDestination());
-        Toast.makeText(this,getString(R.string.dday)+result.getDate(),Toast.LENGTH_SHORT).show();
+        if(result.getDate().length()==0){
+            Toast.makeText(this,getString(R.string.noday),Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this,getString(R.string.dday)+result.getDate(),Toast.LENGTH_SHORT).show();
+        }
 
         // Setup the data source
         ArrayList<TripResultModel> tripResultModelArrayList=new ArrayList<>(); // calls function to get items list
