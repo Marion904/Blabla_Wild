@@ -35,12 +35,9 @@ public class ViewSearchActivityResult2 extends AppCompatActivity {
         // Setup the data source
         ArrayList<TripResultModel> tripResultModelArrayList=new ArrayList<>(); // calls function to get items list
 
-        /*Add some result
-        TripResultModel test = new TripResultModel("Leo","01/02/2017",54);
-        tripResultModelArrayList.add(test);
-        */
+       
         //As proposed by the quest
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy-hh:mm");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
         try {
             tripResultModelArrayList.add(new TripResultModel("Bruce", sdf.parse("21/02/2017-15:30"), 15));
