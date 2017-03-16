@@ -17,12 +17,14 @@ import com.example.wilder.blabla_wild.R;
 public class MainActivity extends AppCompatActivity {
 
     Button start_button;
+    Button submit_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         start_button = (Button) findViewById(R.id.button_start);
+        submit_button=(Button) findViewById(R.id.submit_button);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         //Insert the intent linked to the starting button
@@ -33,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent_travel);
             }
         });
+
+        submit_button.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_submit=new Intent(MainActivity.this, SubmitItineraryActivity.class);
+                startActivity(intent_submit);
+            }
+        });
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new OnClickListener() {

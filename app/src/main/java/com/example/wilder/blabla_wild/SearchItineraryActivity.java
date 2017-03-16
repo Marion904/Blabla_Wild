@@ -3,18 +3,14 @@ package com.example.wilder.blabla_wild;
 
 
 import android.app.DatePickerDialog;
-import android.app.Dialog;
 import android.content.Intent;
-import android.support.v4.app.DialogFragment;
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.os.Bundle;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
@@ -86,10 +82,10 @@ public class SearchItineraryActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Check that a departing and arriving point are completed
                 if (depart.length() == 0 || destination.length() == 0) {
-                    Toast.makeText(SearchItineraryActivity.this, getString(R.string.toast), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SearchItineraryActivity.this, getString(R.string.toast_search), Toast.LENGTH_SHORT).show();
                 } else {
                     //The intent to target the next activity
-                    Intent intent_search = new Intent(SearchItineraryActivity.this, ViewSearchActivityResult2.class);
+                    Intent intent_search = new Intent(SearchItineraryActivity.this, ViewSearchResult2Activity.class);
                     //The information we want to take from the present activity to insert on the actual visual
                     // The departure
                     String departure = depart.getText().toString();

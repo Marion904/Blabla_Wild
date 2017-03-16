@@ -13,26 +13,26 @@
         android:layout_marginLeft="15dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="17dp"
-        android:id="@+id/textView4" />
+        android:id="@+id/departure_time" />
 
     <TextView
-        android:text="TextViewFirstName"
+        android:id="@+id/driverFirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView5"
-        android:layout_below="@+id/textView4"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_marginTop="17dp" />
+        android:layout_alignLeft="@+id/departure_time"
+        android:layout_alignStart="@+id/departure_time"
+        android:layout_below="@+id/departure_time"
+        android:layout_marginTop="17dp"
+        android:text="TextViewFirstName" />
 
     <TextView
-        android:text="TextViewPrice"
+        android:id="@+id/driverPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/departure_time"
         android:layout_marginEnd="16dp"
-        android:id="@+id/textView6" />
+        android:layout_marginRight="16dp"
+        android:text="TextViewPrice" />
 </RelativeLayout>
