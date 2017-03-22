@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Blabla_Wild</string>
+    <string name="action_settings">detailes</string>
+    <string name="arrow">>></string>
+    <string name="date">Fecha</string>
+    <string name="dday">\"La fecha pedida es \"</string>
+    <string name="depart">Llegada</string>
+    <string name="destination">Destincion</string>
+    <string name="noday">No fecha pedida</string>
+    <string name="hour">Hora</string>
+    <string name="price">Precio</string>
+    <string name="search_button">Mirrar</string>
+    <string name="search_date">Fecha</string>
+    <string name="search_depart">Llegada</string>
+    <string name="search_destination">Destinacion</string>
+    <string name="search_text">Mirrar</string>
+    <string name="start_button">Mirrar por un viaje</string>
+    <string name="submit_button">Proponer un itinerario</string>
+    <string name="submit_trip_button">Proponer este itinerario</string>
+    <string name="toast_search">Por favor, asegurate entrar un punto de llegada y una destinacion</string>
+</resources>

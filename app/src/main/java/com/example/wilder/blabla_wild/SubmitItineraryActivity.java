@@ -67,7 +67,7 @@ public class SubmitItineraryActivity extends AppCompatActivity {
                     String departure = submit_depart.getText().toString();
                     String destination = submit_destination.getText().toString();
                     Date date = new Date(submit_date.getText().toString());
-                    int price= new Integer(submit_price.getText().toString());
+                    int price= new Integer (submit_price.getText().toString());
                    ItineraryModel trip = new ItineraryModel(date,price,departure,destination);
 
 

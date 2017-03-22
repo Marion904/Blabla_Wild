@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Blabla_Wild</string>
+    <string name="start_button">Search an itinerary</string>
+    <string name="submit_button">Submit an itinerary</string>
+    <string name="submit_trip_button">Submit this itinerary</string>
+    <string name="welcome">Welcome ! click to get started!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_text">Search</string>
+    <string name="search_depart">Departure</string>
+    <string name="search_destination">Destination</string>
+    <string name="search_date">Date</string>
+    <string name="search_button">Search</string>
+    <string name="travel_button">Find an itinerary</string>
+    <string name="dday">"The requested date is the "</string>
+    <string name="noday">No required date has been specified</string>
+    <string name="toast_search">Please be sure you specify a departure place and a destination</string>
+    <string name="toast_trip">Le trajet a été ajouté avec succès</string>
+    <string name="toast_submit">Please, be sure you fill-in all the trip information fields : departure place, destination, price and date</string>
+    <string name="arrow"> >> </string>
+    <string name="depart">Departure</string>
+    <string name="destination">Destination</string>
+    <string name="price">Price</string>
+    <string name="date">Date</string>
+    <string name="hour">Hour</string>
+
+</resources>
