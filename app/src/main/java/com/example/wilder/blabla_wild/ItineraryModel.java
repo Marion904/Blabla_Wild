@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class ItineraryModel {
 
-    private int mUserId;
+    private String mUserId;
     private String mDriverLastName;
     private String mDriverFirstName;
     private Date mDepartureDate;
@@ -16,11 +16,13 @@ public class ItineraryModel {
     private String mDeparture;
     private String mDestination;
     public static int nUser;
+
+
     private ItineraryModel(){
 
     }
 
-    public ItineraryModel(int userId, String driverLastName, String driverFirstName, Date departureDate, int price, String departure, String destination) {
+    public ItineraryModel(String userId, String driverLastName, String driverFirstName, Date departureDate, int price, String departure, String destination) {
         mUserId = userId;
         mDriverLastName = driverLastName;
         mDriverFirstName = driverFirstName;
@@ -30,17 +32,17 @@ public class ItineraryModel {
         mDestination = destination;
     }
 
-    public ItineraryModel(Date departureDate, int price, String departure, String destination) {
-        mUserId = ++nUser;
-        mDriverLastName = "toto"+mUserId;
-        mDriverFirstName = "LeHero"+mUserId;
+    public ItineraryModel(String userId, Date departureDate, int price, String departure, String destination) {
+        mUserId = userId;
+        mDriverLastName = "toto";
+        mDriverFirstName = "LeHero";
         mDepartureDate = departureDate;
         mPrice = price;
         mDeparture = departure;
         mDestination = destination;
     }
 
-    public int getmUserId() {
+    public String getmUserId() {
         return mUserId;
     }
 
@@ -68,7 +70,7 @@ public class ItineraryModel {
         return mDestination;
     }
 
-    public void setmUserId(int userId){
+    public void setmUserId(String userId){
         mUserId = userId;
     }
 

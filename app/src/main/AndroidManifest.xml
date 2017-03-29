@@ -14,15 +14,17 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".SearchItineraryActivity"
-            android:label="@string/search_text"></activity>
+            android:label="@string/search_text" />
         <activity android:name=".ViewSearchResult2Activity" />
-        <activity android:name=".SubmitItineraryActivity"></activity>
+        <activity android:name=".SubmitItineraryActivity" />
+        <activity android:name=".AccountActivity"/>
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".SignUpActivity"></activity>
     </application>
 
 </manifest>
