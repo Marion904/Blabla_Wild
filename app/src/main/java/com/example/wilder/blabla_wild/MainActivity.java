@@ -2,7 +2,6 @@ package com.example.wilder.blabla_wild;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +14,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+/**
         firebaseAuth = FirebaseAuth.getInstance();
 
         authStateListener= new FirebaseAuth.AuthStateListener() {
@@ -47,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
+ **/
         welcome_textView=(TextView) findViewById(R.id.welcome);
         welcome_textView.setText(welcome);
 
@@ -123,14 +122,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        firebaseAuth.addAuthStateListener(authStateListener);
+        //firebaseAuth.addAuthStateListener(authStateListener);
     }
 
     @Override
     public void onStop() {
         super.onStop();
         if (authStateListener != null) {
-            firebaseAuth.removeAuthStateListener(authStateListener);
+     //       firebaseAuth.removeAuthStateListener(authStateListener);
         }
     }
 }
