@@ -29,23 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-/**
-        firebaseAuth = FirebaseAuth.getInstance();
 
-        authStateListener= new FirebaseAuth.AuthStateListener() {
-
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if(user ==null){
-                    finish();
-                    startActivity(new Intent(MainActivity.this, SignInActivity.class));
-                }
-
-
-            }
-        };
- **/
         welcome_textView=(TextView) findViewById(R.id.welcome);
         welcome_textView.setText(welcome);
 

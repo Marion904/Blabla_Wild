@@ -18,7 +18,7 @@
         />
 
     <TextView
-        android:id="@+id/userDisplayName"
+        android:id="@+id/textViewUserDisplayName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/userDisplayName"
@@ -28,7 +28,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewSignUp" />
 
     <EditText
-        android:id="@+id/editTextUserDisplayName"
+        android:id="@+id/UserDisplayName"
+        android:imeActionId="@+id/userDisplayName"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -37,7 +40,7 @@
         android:layout_margin="10dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userDisplayName" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserDisplayName" />
 
     <TextView
         android:id="@+id/userEmail"
@@ -47,7 +50,7 @@
         android:layout_margin="10dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUserDisplayName" />
+        app:layout_constraintTop_toBottomOf="@+id/UserDisplayName" />
 
     <EditText
         android:id="@+id/editTextNewUserEmail"

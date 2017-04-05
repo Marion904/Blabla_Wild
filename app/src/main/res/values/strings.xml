@@ -40,5 +40,8 @@
     <string name="signUpPending">Enregistrement</string>
     <string name="auth_failed">Echec de la création de compte</string>
     <string name="auth_succeeded">Création de compte réussie</string>
+    <string name="displayName">"Bonjour "</string>
+    <string name="defaultUserName">Quel est ton pseudo?</string>
+    <string name="uriDownloadFail">Echec</string>
 
 </resources>

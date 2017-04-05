@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -26,6 +27,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     private EditText userPwd;
     private EditText userName;
     private TextView signIn;
+    static String displayName;
     //private ProgressDialog progressDialog;
 
     @Override
@@ -42,10 +44,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         signIn.setOnClickListener(this);
 
         userEmail=(EditText) findViewById(R.id.editTextNewUserEmail);
-        userName=(EditText) findViewById(R.id.editTextUserDisplayName);
+        userName=(EditText) findViewById(R.id.UserDisplayName);
         userPwd=(EditText) findViewById(R.id.editTextNewPwd);
 
-       // progressDialog= new ProgressDialog(this);
+
+        // progressDialog= new ProgressDialog(this);
 
         mAuth= new FirebaseAuth.AuthStateListener() {
             @Override
@@ -76,6 +79,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         String email = userEmail.getText().toString().trim();
         String password  = userPwd.getText().toString().trim();
 
+
         //checking if email and passwords are empty
         if(TextUtils.isEmpty(email)){
             Toast.makeText(SignUpActivity.this,getString(R.string.toastDefaultEmail),Toast.LENGTH_SHORT).show();
@@ -97,7 +101,20 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Toast.makeText(SignUpActivity.this, R.string.auth_succeeded,Toast.LENGTH_SHORT).show();
-
+                        FirebaseUser user = firebaseAuth.getCurrentUser();
+                        displayName = userName.getText().toString().trim();
+                        UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                             .setDisplayName(displayName)
+                             .build();
+                        user.updateProfile(profileUpdates).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                Toast.makeText(SignUpActivity.this,R.string.displayName+displayName,Toast.LENGTH_SHORT);
+                                Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                                finish();
+                                startActivity(intent);
+                            }
+                            });
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.

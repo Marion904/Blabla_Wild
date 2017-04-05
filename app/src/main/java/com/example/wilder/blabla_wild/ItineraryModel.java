@@ -34,8 +34,18 @@ public class ItineraryModel {
 
     public ItineraryModel(String userId, Date departureDate, int price, String departure, String destination) {
         mUserId = userId;
-        mDriverLastName = "toto";
-        mDriverFirstName = "LeHero";
+        mDriverLastName = "XXX";
+        mDriverFirstName = "XXX";
+        mDepartureDate = departureDate;
+        mPrice = price;
+        mDeparture = departure;
+        mDestination = destination;
+    }
+
+    public ItineraryModel(String userId, String driverFirstName,Date departureDate, int price, String departure, String destination) {
+        mUserId = userId;
+        mDriverLastName = "XXX";
+        mDriverFirstName = driverFirstName ;
         mDepartureDate = departureDate;
         mPrice = price;
         mDeparture = departure;

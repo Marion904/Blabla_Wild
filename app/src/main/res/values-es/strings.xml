@@ -19,4 +19,21 @@
     <string name="submit_button">Proponer un itinerario</string>
     <string name="submit_trip_button">Proponer este itinerario</string>
     <string name="toast_search">Por favor, asegurate entrar un punto de llegada y una destinacion</string>
+    <string name="signInFailed">Es cierto de ser registrado?</string>
+    <string name="signInPending">Identificacion pendiente</string>
+    <string name="signUpPending">Registracion pendiente</string>
+    <string name="textViewSignIn">Bienvenido! Por favor, identifica-te</string>
+    <string name="textViewSignUp">Crear una cuenta</string>
+    <string name="textViewSignedUpAlready">Parece que ya tienes una cuenta : identifica-te!</string>
+    <string name="textViewsignUpNew">Ya no tienes una cuenta? Cree-te una!</string>
+    <string name="toastDefaultEmail">"Tienes que indicar tu Email "</string>
+    <string name="toastDefaultPwd">Tienes que creer tu contrasena</string>
+    <string name="toast_submit">Indica todas las requestadas informaciones : punto de llegada, de destinacion, precio y fecha</string>
+    <string name="toast_trip">"El viaje fue addido "</string>
+    <string name="travel_button">Mirrar a un viaje</string>
+    <string name="uriDownloadFail">Fracaso</string>
+    <string name="userDisplayName">Nombre de pantalla</string>
+    <string name="userEmail">Email</string>
+    <string name="userPwd">Contrasena</string>
+    <string name="welcome">Bienvenido!</string>
 </resources>

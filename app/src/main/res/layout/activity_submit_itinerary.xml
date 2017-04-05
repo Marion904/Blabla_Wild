@@ -134,7 +134,7 @@
         android:id="@+id/submit_trip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit_trip_button"
+        android:text="@string/submit_trip_button"
         android:background="@color/colorAccent"
         android:textColor="@color/colorTitle"
         android:padding="5dp"

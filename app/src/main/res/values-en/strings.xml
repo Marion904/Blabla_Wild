@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth_failed">Sign-up failed</string>
+    <string name="auth_succeeded">Successfull sign-up</string>
+    <string name="buttonDisconnect">Log-out</string>
+    <string name="signInFailed">Are you sure you already have an account</string>
+    <string name="signInPending">Sign-in pending</string>
+    <string name="signUpPending">Sign-up pending</string>
+    <string name="textViewSignIn">Welcome! Please sign-in</string>
+    <string name="textViewSignUp">Register</string>
+    <string name="textViewSignedUpAlready">You seem to already have an account : sign-in.</string>
+    <string name="textViewsignUpNew">Not registered yet? Sign-up!</string>
+    <string name="toastDefaultEmail">Please fill-in your email</string>
+    <string name="toastDefaultPwd">You must choose a password</string>
+    <string name="uriDownloadFail">Failure</string>
+    <string name="userDisplayName">Display Name</string>
+    <string name="userEmail">Email</string>
+    <string name="userPwd">Password</string>
+</resources>

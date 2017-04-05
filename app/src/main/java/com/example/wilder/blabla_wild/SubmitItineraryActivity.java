@@ -89,7 +89,6 @@ public class SubmitItineraryActivity extends AppCompatActivity {
                     Toast.makeText(SubmitItineraryActivity.this, getString(R.string.toast_submit), Toast.LENGTH_SHORT).show();
                 }else{
 
-
                     String departure = submit_depart.getText().toString();
                     String destination = submit_destination.getText().toString();
                     Date date = new Date(submit_date.getText().toString());
@@ -97,7 +96,8 @@ public class SubmitItineraryActivity extends AppCompatActivity {
                     //getting current user
                     FirebaseUser user = firebaseAuth.getCurrentUser();
                     String uId= user.getUid();
-                   ItineraryModel trip = new ItineraryModel(uId,date,price,departure,destination);
+                    String userName=user.getDisplayName();
+                   ItineraryModel trip = new ItineraryModel(uId,userName,date,price,departure,destination);
 
 
                     // Write a message to the database
