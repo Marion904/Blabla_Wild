@@ -88,11 +88,10 @@ public class SubmitItineraryActivity extends AppCompatActivity {
                 if (submit_depart.length() == 0 || submit_date.length() == 0||submit_destination.length()==0||submit_price.length()==0){
                     Toast.makeText(SubmitItineraryActivity.this, getString(R.string.toast_submit), Toast.LENGTH_SHORT).show();
                 }else{
-
                     String departure = submit_depart.getText().toString();
                     String destination = submit_destination.getText().toString();
                     Date date = new Date(submit_date.getText().toString());
-                    int price= new Integer (submit_price.getText().toString());
+                    int price= new Integer (submit_price.getText().toString().trim());
                     //getting current user
                     FirebaseUser user = firebaseAuth.getCurrentUser();
                     String uId= user.getUid();
